@@ -4,6 +4,8 @@
 
 Более подробная информация на сайте - [networkroom.ru]. 
 
+Файлы проекта находятся в папке [public] это файлы [stories.html] и [app.js]
+
 ### Установка
 
 ```
@@ -21,9 +23,12 @@ sh setup.sh
 // 5. Открыть в браузере проект http://localhost:3000/stories.html
 ```
 
-Пример взять из книги [Величие Vue.js 2]
+Репозитарий реализован на основе примера из книги [Величие Vue.js 2]
 
 [networkroom.ru]: http://networkroom.ru 
 [PHP]: http://php.net/downloads.php
 [Composer]: https://getcomposer.org/download/
 [Величие Vue.js 2]: https://github.com/hootlex/the-majesty-of-vuejs-2/tree/ru
+[public]: https://github.com/NetWorkRoom/vue-api-pagination/tree/master/public
+[stories.html]: https://github.com/NetWorkRoom/vue-api-pagination/blob/master/public/stories.html
+[app.js]: https://github.com/NetWorkRoom/vue-api-pagination/blob/master/public/js/app.js

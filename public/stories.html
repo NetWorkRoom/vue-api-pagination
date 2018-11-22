@@ -47,18 +47,23 @@
         <div id="app">
 
             <div class="pagination mb-3">
+                <!-- Кнопка для переключения на предыдущую страницу -->
                 <button
                         class="btn btn-default btn-sm mr-3"
                         @click="fetchStories(pagination.prev_page_url)"
                         :disabled="!pagination.prev_page_url">
-                    Назад
+                    Предыдущая
                 </button>
-                <span v-cloak>Page {{pagination.current_page}} of {{pagination.last_page}}</span>
+
+                <!-- Выводим номер текущей страницы и их количество -->
+                <span v-cloak>Страница {{pagination.current_page}} из {{pagination.last_page}}</span>
+
+                <!-- Кнопка для переключения на следующую страницу -->
                 <button
                         class="btn btn-default btn-sm ml-3"
                         @click="fetchStories(pagination.next_page_url)"
                         :disabled="!pagination.next_page_url">
-                    Next
+                    Следующая
                 </button>
             </div>
 

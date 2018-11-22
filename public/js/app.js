@@ -74,6 +74,7 @@ new Vue({
     data: {
         stories: [],    // Массив для хранения всех записей
         pagination: {}, // Объект для хранения информации о текущем показе страницы
+        story: {},
     },
 
     /* Вызываем при каждом монтировании в DOM родителького компонета метод fetchStories() */
@@ -109,7 +110,7 @@ new Vue({
 
             axios.get(page_url)
                 .then(function (response) {
-
+                    console.log(response.data.data);
                     /* Перебираем полученный массив с данными с сервера и добавляем каждому объекту
                     свойство editing со значением false, и записываем в переменную storiesReady */
                     var storiesReady = response.data.data.map(function (story) {
